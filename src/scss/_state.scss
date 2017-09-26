@@ -1,0 +1,67 @@
+.header {
+	&__menu {
+		&_item {
+			a {
+				&:hover {
+					color: $tomato;
+					border-bottom: 1px solid $tomato;
+					transition-duration: .2s;
+				}
+			}
+		}
+	}
+}
+.aditional-link:hover {
+	cursor: pointer;
+}
+.products {
+	&__slider-controls, &-loader {
+		button:active {
+			outline: none;
+			border-color: transparent;
+			color: $tomato;
+			transition-duration: .2s;
+		}
+		button:focus {
+			outline: none;
+		}
+		button::-moz-focus-inner {
+			border: 0;
+		}
+	}
+	&-loader {
+		button:active, button:focus {
+			color: $tomato;
+			border-bottom: 1px solid $tomato;
+		}
+	}
+	&-item {
+		transition-duration: .4s;
+		&__overlay {
+			&_links {
+				.circle_link {
+					&:hover {
+						background-color: $tomato;
+						transition-duration: .2s;
+					}
+				}
+			}
+		}
+		&__preview:hover {
+			.products-item__overlay{
+				display: block;
+				background-color: rgba(0, 0, 0, .5);
+			}
+		}
+	}
+}
+.footer-content {
+	a:hover {
+		color: $tomato;
+	}
+}
+
+.active {
+	transition-duration: .5s;
+	display: block !important;
+}

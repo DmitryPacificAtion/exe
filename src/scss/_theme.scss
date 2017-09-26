@@ -1,0 +1,74 @@
+.txt {
+	&-asphalt {
+		color: $wetAsphalt;
+	}
+	&-white {
+		color: #fff;
+	}
+	&-red {
+		color: $tomato;
+	}
+}
+.bg {
+	&-red {
+		background-color: $tomato;
+	}
+	&-orange {
+		background-color: $orange;
+	}
+	&-asphalt {
+		background-color: $wetAsphalt;
+	}
+}
+.label {
+	&__sale {
+		background: url('../img/sprite.png') -136px 0 no-repeat;
+	}
+	&__new {
+		background: url('../img/sprite.png') -67px 0 no-repeat;
+	}
+	&__hot {
+		background: url('../img/sprite.png') 0 0 no-repeat;
+	}
+}
+.price {
+	&__old {
+		color: #c7c7c7;
+		position: relative;
+		font-weight: 800;
+		font-size: rem(14);
+		margin-right: 6px;
+		&:after {
+			content: '';
+			display: block;
+			border-bottom: 2px solid #c7c7c7;
+			width: 120%;
+			height: 1px;
+			left: -10%;
+			position: absolute;
+			top: 55%;
+		}
+	}
+	&__new {
+		color: $tomato;
+		font-size: rem(18);
+		margin-left: 6px;
+	}
+}
+.svg {
+	&-asphalt {
+		fill: $wetAsphalt;
+	}
+	&-light_grey {
+		fill: $lightGrey;
+	}
+	&-green {
+		fill: $green;
+	}
+	&-tomato {
+		fill: $tomato;
+	}
+	&-white {
+		fill: #fff;
+	}
+}
