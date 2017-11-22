@@ -43,6 +43,13 @@ import 'slick-carousel';
 	} catch (e) {}
 }(window, document));
 
+var ontop = $('.on-top');
+ontop.addEventListener('click', function (e) {
+	e.preventDefault;
+	scrollTo(e, 0);
+});
+
+
 // var items = $('.products-slider').find('.products-item');
 // console.log(items);
 // $('.oi-chevron-left').on('click', function (e) {

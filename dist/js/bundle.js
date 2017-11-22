@@ -10328,7 +10328,7 @@ return jQuery;
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-
+/* WEBPACK VAR INJECTION */(function($) {
 
 __webpack_require__(2);
 
@@ -10377,6 +10377,12 @@ __webpack_require__(5);
 	} catch (e) {}
 })(window, document);
 
+var ontop = $('.on-top');
+ontop.addEventListener('click', function (e) {
+	e.preventDefault;
+	scrollTo(e, 0);
+});
+
 // var items = $('.products-slider').find('.products-item');
 // console.log(items);
 // $('.oi-chevron-left').on('click', function (e) {
@@ -10404,6 +10410,26 @@ var d = document;
 var slider = d.querySelector('.products-slider');
 var items = d.querySelector('.items');
 console.log(items);
+
+/*********************************************
+
+
+
+
+============================================
+=										   =
+=   https://codepen.io/rendro/pen/ajhrn    =
+=										   =
+============================================
+
+
+
+
+
+
+
+*********************************************/
+
 // var pos = 0;
 // // var transform = Modernizr.prefixed('transform');
 
@@ -10422,6 +10448,7 @@ console.log(items);
 // }
 
 // window.addEventListener('resize', setTransform);
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
 /* 2 */
