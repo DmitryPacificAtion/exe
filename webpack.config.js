@@ -31,6 +31,23 @@ module.exports = {
 		}
 		]
 	},
+	devServer: {
+		contentBase: __dirname + '/dist',
+		compress: false,
+		port: 3001,
+		host: '127.0.0.1',
+		disableHostCheck: true,
+		historyApiFallback: true,
+		open: true,
+		// proxy: {
+		//     '/#': {
+		//         target: 'http://192.168.5.196/v1/login',
+		//         changeOrigin: true,
+		//         secure: false
+		//     }
+		// },
+		// headers: {"Access-Control-Allow-Origin": "*", "Access-Control-Allow-Credentials": "true"}
+	},
 	plugins: [
 	// new ExtractTextPlugin('style.css', {
 	// 	allChunks: true
