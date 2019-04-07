@@ -1,20 +1,19 @@
 import 'bootstrap';
-import 'slick-carousel';
 // Загружаем SVG спрайт
-(function(window, document) {
+(function (window, document) {
 	'use strict';
 	var file = '../img/sprite.svg'; // путь к файлу спрайта на сервере
 	var revision = 1; // версия спрайта
 
 	if (!document.createElementNS || !document.createElementNS('http://www.w3.org/2000/svg', 'svg').createSVGRect) return true;
-	
+
 	var isLocalStorage = 'localStorage' in window && window['localStorage'] !== null;
 	var request;
 	var data;
-	var insertIT = function() {
+	var insertIT = function () {
 		document.body.insertAdjacentHTML('afterbegin', data);
 	};
-	var insert = function() {
+	var insert = function () {
 		if (document.body) insertIT();
 		else document.addEventListener('DOMContentLoaded', insertIT);
 	};
@@ -29,7 +28,7 @@ import 'slick-carousel';
 	try {
 		request = new XMLHttpRequest();
 		request.open('GET', file, true);
-		request.onload = function() {
+		request.onload = function () {
 			if (request.status >= 200 && request.status < 400) {
 				data = request.responseText;
 				insert();
@@ -40,7 +39,7 @@ import 'slick-carousel';
 			}
 		}
 		request.send();
-	} catch (e) {}
+	} catch (e) { }
 }(window, document));
 
 var ontop = $('.on-top');
