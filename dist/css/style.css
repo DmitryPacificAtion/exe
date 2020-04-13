@@ -9213,6 +9213,15 @@ button:hover {
   position: relative;
   margin-left: 15px; }
 
+@media all and (max-width: 1140px) {
+  .categories__woomen {
+    margin-right: 0;
+    margin-bottom: 15px;
+  }
+  .categories__men {
+    margin-left: 0;
+  }
+}
 .products {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -9417,6 +9426,7 @@ button:hover {
     color: #636363; }
 
 .brands {
+  overflow: hidden;
   height: 250px; }
   .brands__slider {
     list-style-type: none;
@@ -9526,6 +9536,7 @@ button:hover {
 
 .on-top {
   background-color: #1c1c1c;
+  display: none;
   border: none;
   border-radius: 5px;
   color: #636363;

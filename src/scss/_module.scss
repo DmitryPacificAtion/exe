@@ -155,9 +155,6 @@
 		font-size: rem(30);
 		text-align: center;
 		margin: -25% 0 0;
-		&_item-1 {
-			
-		}
 		&_item-2 {
 			span {
 				padding: 0 5px;
@@ -181,10 +178,17 @@
 	&__woomen {
 		position: relative;
 		margin-right: 15px;
+		@media all and (max-width: 1140px) {
+			margin-right: 0;
+			margin-bottom: 15px;
+		}
 	}
 	&__men {
 		position: relative;
 		margin-left: 15px;
+		@media all and (max-width: 1140px) {
+			margin-left: 0;
+		}
 	}
 }
 .products{
@@ -432,6 +436,7 @@
 		list-style-type: none;
 		padding-top: 80px;
 		padding-bottom: 80px;
+		overflow: hidden;
 		&_item {
 			display: inline-block;
 			margin: 0 30px;
@@ -556,7 +561,7 @@
 	}
 }
 .on-top {
-	// display: none;
+	display: none;
 	background-color: #1c1c1c;
 	border: none;
 	border-radius: 5px;
